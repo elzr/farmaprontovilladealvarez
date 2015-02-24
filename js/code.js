@@ -19,10 +19,10 @@ var FPVA = {
 			} else {
 				if( w <= 1100 ) {
 					$('.welcome, .fb-like-box').css('margin-top', '50px');
-					$('.site-navi').css('margin-right', 0);
+					$('.site-navi').css('margin-right', 0).css('right','1%');
 				} else {
 					$('.welcome, .fb-like-box').css('margin-top', '0');
-					$('.site-navi').css('margin-right', (side/3 - 100)+'px');
+					$('.site-navi').css('margin-right', (side/3 - 100)+'px').css('right','6%');
 				}
 			}
 		},
