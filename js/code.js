@@ -8,11 +8,15 @@ var FPVA = {
 	],
 	header:{
 		adjust:function() {
-			var side = $(window).width() - 800;
+			var w = $(window).width(), side = w - 800;
+			if( $('.wrapper').width() == 800 ) {
+				$('.welcome, .fb-like-box').css('margin-top', '100px');
+			}
 			if($('#mast').length < 1) {
 				$('.site-title').css('margin-left', (side/3)+'px');
 				$('.site-nav').css('margin-right', (side/3 - 100)+'px');
 			}
+
 		},
 		boot:function() {
 			FPVA.header.adjust();
