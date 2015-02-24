@@ -6,13 +6,29 @@ var FPVA = {
 		"La libertad y la salud se asemejan, su verdadero valor se conoce cuando nos faltan.",
 		"Solo la alegria es garantia de salud y longevidad."
 	],
+	header:{
+		adjust:function() {
+			var side = $(window).width() - 800;
+			if($('#mast').length < 1) {
+				$('.site-title').css('margin-left', (side/3)+'px');
+				$('.site-nav').css('margin-right', (side/3 - 100)+'px');
+			}
+		},
+		boot:function() {
+			FPVA.header.adjust();
+			$(window).resize( FPVA.header.adjust );
+		}
+	},
 	mast:{
 		adjust:function() {
 			var prop = 1070/2000, h = prop * $(window).width();
 			$('#mast, #mast2').height( h + 'px' );
 			$('#mast2').css( 'top', h + 'px' );
-			$(window).height() > 768
-			$('header').height( (h*2) + 'px' );
+			if( ($(window).height() < 800) || ($(window).width() < 1300) ) {
+				$('header').height( (h*2) + 'px' );
+			} else {
+				$('header').height( h + 'px' );
+			}
 		},
 		boot:function() {
 			if($('#mast').length >= 1) {
@@ -28,6 +44,7 @@ var FPVA = {
 	boot:function() {
 		$('footer .wrapper').html( '"'+_(FPVA.phrases).sample()+'"' );
 		FPVA.mast.boot();
+		FPVA.header.boot();
 	}
 };
 
