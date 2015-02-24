@@ -49,17 +49,21 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-header {position:relative;
-	.mast {position:absolute; top:0; left:0; z-index:1;
+.site-header {border-top:0}
+header {position:relative; min-height:170px !important; background:#eee; text-align:center;
+	nav.site-nav, .welcome {position:absolute; z-index:2}
+	.site-title img {height:150px}
+	.mast {position:absolute; top:0; left:0; z-index:1; height:900px; overflow:auto; background:#57949F;
 		img {width:100%}
 	}
-	.site-title, nav.site-nav, .welcome {position:absolute; z-index:2}
-	.welcome {width:300px; text-align:center; top:160px; right:200px;
+	.welcome {width:300px; text-align:center; top:100px; left:8%; padding:15px 5px; background:rgba(238, 238, 238, 0.6);
 		div:nth-of-type(1) {font-weight:bold; font-size:110%; margin-bottom:20px}
 	}
 }
 
-nav.site-nav {right:100px; top:0;
+footer {background:#ccc; text-align:center; border-top:#aaa}
+
+nav.site-nav {right:6%; top:0;
 	a { display:inline-block; position:relative; line-height:1em; padding:10px 20px; padding-top:110px; margin:5px; top:-50px; color:#fff; background:#233994;
 		border-bottom:5px solid #82B8BB;
 		box-shadow:2px 2px 3px rgba(0,0,0,0.2);
@@ -76,7 +80,17 @@ nav.site-nav {right:100px; top:0;
 		&:nth-of-type(2) {background:#4A508B}
 		&:nth-of-type(3) {background:#07125e }
 		&:nth-of-type(4) {background:#1D469D}
-		&:hover {background:#528585; top:-10px}
+		&:hover, &.here {background:#528585; top:-10px}
 	}
 }
 
+.mapa {display:inline-block; margin:0 auto; margin-bottom:10px; 
+	img {width:100%; max-width:1200px}
+}
+
+.servicio { overflow:hidden; border-bottom:1px solid #ccc; padding-bottom:10px; margin-bottom:10px;
+	.left {float:left; width:45%; text-align:center;
+		img {height:200px}
+	}
+	.right {float:left; width:55%}
+}

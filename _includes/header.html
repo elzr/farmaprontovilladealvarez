@@ -1,28 +1,23 @@
 <header class="site-header">
+	 {% if page.title == 'Bienvenido' %}
+		 <div class="welcome">
+			<div>Bienvenido estimado cliente</div>
+			<div>"La salud es un regalo,<br/> cuidarla nuestra responsabilidad"</div>
+		 </div>
 
-  <div class="wrapper">
+		 <div class="mast">
+			 <img src="{{ site.baseurl }}/img/mast.jpg" />
+		 </div>
+	 {% else %}
+		 <a class="site-title" href="{{ site.baseurl }}/">
+			 <img src="{{ site.baseurl }}/img/logo.png" />
+		 </a>
+	 {% endif %}
 
-	 <!--
-    <a class="site-title" href="{{ site.baseurl }}/">
-		 <img src="{{ site.baseurl }}/img/logo.png" />
-	 </a>
-	 -->
-
-	 <div class="welcome">
-		<div>Bienvenido estimado cliente</div>
-		<div>"La salud es un regalo,<br/> cuidarla nuestra responsabilidad"</div>
-	 </div>
-
-    <nav class="site-nav">
-		<a href="/nosotros">Nosotros</a>
-		<a href="/servicios">Servicios</a>
-		<a href="/galeria">Galeria</a>
-		<a href="/contacto">Contacto</a>
-    </nav>
-
-	 <div class="mast">
-		 <img src="{{ site.baseurl }}/img/mast.jpg" />
-	 </div>
-  </div>
-
+	 <nav class="site-nav">
+		<a href="/nosotros" {% if page.title == 'Nosotros' %} class="here" {% endif %}>Nosotros</a>
+		<a href="/servicios" {% if page.title == 'Servicios' %} class="here" {% endif %}>Servicios</a>
+		<a href="/galeria" {% if page.title == 'Galeria de fotos' %} class="here" {% endif %}>Galeria</a>
+		<a href="/contacto" {% if page.title == 'Contacto' %} class="here" {% endif %}>Contacto</a>
+	 </nav>
 </header>
