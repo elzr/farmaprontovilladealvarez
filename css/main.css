@@ -3,11 +3,11 @@ Syntax error: Invalid CSS after "-": expected number or function, was "--"
         on line 1 of /Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss
 
 1: ---
-2: # Only the main Sass file needs front matter (the dashes are enough)
-3: ---
-4: @charset "utf-8";
+2: ---
+3: @charset "utf-8";
+4: 
 5: 
-6: 
+6: // Our variables
 
 Backtrace:
 /Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss:1
@@ -44,4 +44,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"-\": expected number or function, was \"--\"\A         on line 1 of /Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss\A \A 1: ---\A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: @charset \"utf-8\";\A 5: \A 6: "; }
+  content: "Syntax error: Invalid CSS after \"-\": expected number or function, was \"--\"\A         on line 1 of /Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss\A \A 1: ---\A 2: ---\A 3: @charset \"utf-8\";\A 4: \A 5: \A 6: // Our variables"; }
