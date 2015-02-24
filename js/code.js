@@ -9,14 +9,22 @@ var FPVA = {
 	header:{
 		adjust:function() {
 			var w = $(window).width(), side = w - 800;
-			if( $('.wrapper').width() == 800 ) {
-				$('.welcome, .fb-like-box').css('margin-top', '100px');
-			}
-			if($('#mast').length < 1) {
-				$('.site-title').css('margin-left', (side/3)+'px');
-				$('.site-nav').css('margin-right', (side/3 - 100)+'px');
-			}
 
+			if($('#mast').length < 1) {
+				if( w <= 1100 ) {
+					$('header').addClass('constrained');
+				} else {
+					$('header').removeClass('constrained');
+				}
+			} else {
+				if( w <= 1100 ) {
+					$('.welcome, .fb-like-box').css('margin-top', '100px');
+					$('.site-navi').css('margin-right', 0);
+				} else {
+					$('.welcome, .fb-like-box').css('margin-top', '0');
+					$('.site-navi').css('margin-right', (side/3 - 100)+'px');
+				}
+			}
 		},
 		boot:function() {
 			FPVA.header.adjust();
@@ -26,12 +34,13 @@ var FPVA = {
 	mast:{
 		adjust:function() {
 			var prop = 1070/2000, h = prop * $(window).width();
-			$('#mast, #mast2').height( h + 'px' );
-			$('#mast2').css( 'top', h + 'px' );
+			$('#mast, #mast2').height( h + 10 + 'px' );
+			$('#mast2').css( 'top', h + 10 + 'px' );
+
 			if( ($(window).height() < 800) || ($(window).width() < 1300) ) {
-				$('header').height( (h*2) + 'px' );
+				$('header').height( (h*2)+ 20 + 'px' );
 			} else {
-				$('header').height( h + 'px' );
+				$('header').height( h + 10 + 'px' );
 			}
 		},
 		boot:function() {
