@@ -49,13 +49,13 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-header {position:relative; height:650px;
-	.mast {position:fixed; top:0; left:0; z-index:1; height:650px; overflow:hidden;
+header {position:relative;
+	.mast {position:absolute; top:0; left:0; z-index:1;
 		img {width:100%}
 	}
 	.site-title, nav.site-nav, .welcome {position:absolute; z-index:2}
-	.welcome {width:300px; text-align:center; top:100px; left:200px;
-		div:nth-of-type(1) {font-weight:bold; font-size:110%; margin-bottom:40px}
+	.welcome {width:300px; text-align:center; top:160px; right:200px;
+		div:nth-of-type(1) {font-weight:bold; font-size:110%; margin-bottom:20px}
 	}
 }
 
