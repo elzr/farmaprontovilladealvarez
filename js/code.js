@@ -18,7 +18,7 @@ var FPVA = {
 				}
 			} else {
 				if( w <= 1100 ) {
-					$('.welcome, .fb-like-box').css('margin-top', '100px');
+					$('.welcome, .fb-like-box').css('margin-top', '50px');
 					$('.site-navi').css('margin-right', 0);
 				} else {
 					$('.welcome, .fb-like-box').css('margin-top', '0');
