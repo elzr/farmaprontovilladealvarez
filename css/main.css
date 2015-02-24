@@ -1,0 +1,47 @@
+/*
+Syntax error: Invalid CSS after "-": expected number or function, was "--"
+        on line 1 of /Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss
+
+1: ---
+2: # Only the main Sass file needs front matter (the dashes are enough)
+3: ---
+4: @charset "utf-8";
+5: 
+6: 
+
+Backtrace:
+/Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss:1
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:1148:in `expected'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:1084:in `expected'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:1066:in `expr!'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:922:in `term'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:897:in `expr'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:671:in `simple_selector_sequence'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:640:in `_selector'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:619:in `selector'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:603:in `selector_sequence'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:528:in `ruleset'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:553:in `block_child'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:543:in `block_contents'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/scss/parser.rb:27:in `parse'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/engine.rb:342:in `_to_tree'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/exec.rb:425:in `watch_or_update'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/exec.rb:307:in `process_result'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/exec.rb:41:in `parse'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/lib/sass/exec.rb:21:in `parse!'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.7/bin/sass:9:in `<top (required)>'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/bin/sass:19:in `load'
+/Users/bex/.rvm/gems/ruby-1.9.2-p290/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"-\": expected number or function, was \"--\"\A         on line 1 of /Users/bex/Dropbox/prjcts/else/farmaprontovilladealvarez/css/main.scss\A \A 1: ---\A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: @charset \"utf-8\";\A 5: \A 6: "; }
