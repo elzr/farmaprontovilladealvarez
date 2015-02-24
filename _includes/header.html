@@ -15,9 +15,9 @@
 	 {% endif %}
 
 	 <nav class="site-nav">
-		<a href="/nosotros" {% if page.title == 'Nosotros' %} class="here" {% endif %}>Nosotros</a>
-		<a href="/servicios" {% if page.title == 'Servicios' %} class="here" {% endif %}>Servicios</a>
-		<a href="/galeria" {% if page.title == 'Galeria de fotos' %} class="here" {% endif %}>Galeria</a>
-		<a href="/contacto" {% if page.title == 'Contacto' %} class="here" {% endif %}>Contacto</a>
+		<a href="{{ site.baseurl }}/nosotros" {% if page.title == 'Nosotros' %} class="here" {% endif %}>Nosotros</a>
+		<a href="{{ site.baseurl }}/servicios" {% if page.title == 'Servicios' %} class="here" {% endif %}>Servicios</a>
+		<a href="{{ site.baseurl }}/galeria" {% if page.title == 'Galeria de fotos' %} class="here" {% endif %}>Galeria</a>
+		<a href="{{ site.baseurl }}/contacto" {% if page.title == 'Contacto' %} class="here" {% endif %}>Contacto</a>
 	 </nav>
 </header>
